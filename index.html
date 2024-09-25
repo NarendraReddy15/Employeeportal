@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input[type=email],input[type=text], input[type=number],select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+label{
+  font-weight: bold;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;} */
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #09a0e1;
+  color: white;
+}
+
+    #main{
+      margin:40px;
+      border: 1px solid lightgrey;
+      padding:20px;
+      background-color: whitesmoke;
+      border-radius: 20px;
+    
+    }
+    button{
+      width: 100%;
+      padding: 12px 20px;
+      background-color: rgb(45, 167, 243);
+      color:white;
+      font-weight: bold;
+      border:none;
+    }
+    h1,h2{
+      
+      text-align: center;
+    }
+    p{
+      color:rgb(20, 188, 244)
+    
+    }
+    .maps,.fo{
+      
+      padding:20px;
+      
+      margin:20px;
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+
+    }
+    div{
+      border:1px solid lightgrey;
+      border-radius:30px;
+      padding:20px;
+      margin:10px;
+    }
+    img{
+      width:40px;
+      border-radius: 50%;
+    }
+    .fo{
+      background-color:rgb(216, 240, 249);
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <h1>
+      Company Directory portal
+    </h1>
+    <div class="fo" >
+      <h2>Employee Registration Form</h2>
+      <form action="/action_page.php">
+        <label for="fname">Full Name:</label>
+        <input type="text" id="fname" name="fulltname" placeholder="Your name..">
+    
+        <label for="lname">Email:</label>
+        <input type="email" id="emailid" name="emailid" placeholder="Your email.">
+    
+        <label for="Department">Department:</label>
+        <select id="Department" name="Department">
+          <option value="it">it</option>
+          <option value="Hr">Hr</option>
+          <option value="finance">Finance</option>
+          <option value="marketting">marketing</option>
+        </select>
+        <label for="quantity">Employee ID:</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+ 
+        <label for="fname">Profile Picture URL:</label>
+        <input type="text" id="profile" name="profile" placeholder="Your profile..">
+    
+       <button>Register Employee</button>
+      </form>
+    </div>
+    <div><h2>Employee List</h2>
+      <p>1. John Doe - john@example.com</p>
+      <hr>
+      <p>2. Jane Smith - jane@example.com </p>
+      <hr>
+    </div>
+    <div><h2>Employee Details</h2>
+    <table id="customers">
+      <tr>
+        <th>Name</th>
+        <th>Employee ID</th>
+        <th>Department</th>
+        <th>Profile Picture</th>
+      </tr>
+      <tr>
+        <td>John Doe</td>
+        <td>12345</td>
+        <td>12345</td>
+        <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"></td>
+      </tr>
+      <tr>
+        <td>John Doe</td>
+        <td>12345</td>
+        <td>12345</td>
+        <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"></td>
+        
+      </tr>
+    </table></div>
+    <div class="maps" style="border:none">
+      <h2>Company Location</h2>
+      <iframe style="width:1200px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121794.59407634095!2d78.21321019726562!3d17.455833700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93c315877c21%3A0x2769c88dfe665466!2sInnomatics%20Research%20Labs!5e0!3m2!1sen!2sin!4v1727276122772!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+  </div>
+</body>
+</html>
